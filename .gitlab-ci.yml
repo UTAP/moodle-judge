@@ -1,0 +1,17 @@
+image: python:latest
+
+stages:
+  - lint
+
+cache:
+  paths:
+    - .cache/pip
+
+before_script:
+  - python -V               # Print out python version for debugging
+
+lint:
+  stage: lint
+  script:
+    - pip install bashate
+    - bashate *.sh
