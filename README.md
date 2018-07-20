@@ -50,6 +50,8 @@ Special judge should be an executable file which can be run like:
 It should return (**not** print) `0` on _Accept_ and `1` or any more-than-zero exit code on _Wrong Answer_. It should has got `$JUDGE_EXT` extension and should be on path `$JUDGE_DIR`.  
 Remember that in this case, _solution_file_ can be any file, not necessarily a correct answer.
 
+Remember to add _question_name_ to `HAS_SPECIAL_JUDGE` to use special judge instead of `$DIFF_TOOL`.
+
 ### Commands
 
 * show help
